@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About Us | LLCM{% endblock %}
+{% block content %}
+
+        <div class="container">
+                <div class="outer">
+                    <div class="details">
+                            You are welcome to Love Lead Covenant Ministries International Inc.
+                    <br>
+                        <span>
+                            ...Preaching, teaching, and showing the Love that saved the world
+                        </span>
+                    </div>
+                </div>
+        </div>
+
+        <div class="quote">
+            <div class="pastor">
+                    <img src={% static "css/img/sap.jpg" %} alt="">
+
+            </div>
+            <div class="pastor_name">
+                PASTOR JOHNSON A. PATRICK (Baba Africa)
+            </div>
+
+            <div class="pastor_quote">
+                    <i>
+                        Brethren, there is no small vision or ministry in life, <br>
+                        neither is there any muster seed without a potential to become a great tree <br>
+                        but it is clearly the man inputs that determines his/her outputs. <br>
+                    </i>
+                </div>
+        </div>
+
+        <div class="events_div">
+            <div class="events_title">
+                UPCOMING EVENTS
+            </div>
+
+            <div class="events_box">
+                 <div class="events_pics">
+                    <img src={% static "css/img/pexels-luis-quintero-2351722.jpg" %} alt="">
+
+                 </div>
+                 <div class="events_details">
+                    <div class="events_name">
+                        SUNDAY SERVICE (Love Feast Hour Time)
+                    </div>
+                     <div class="events_info">
+                            This book of the law shall not depart from your mouth for you shall
+                            meditate in it day and night, then he shall make your ways properous
+                            and you shall find good success - <span>Joshua 1:8 (NLT)</span> <br>
+                            Just us every Sunday by 9:00am as we worship Jesus the Love of God
+                        </div>
+
+                        <a href="{% url 'home:eventspage' %}" class="a_more">
+                            <div class="events_more">
+                                READ MORE
+                             </div>
+                           </a>
+
+
+                    </div>
+
+            </div>
+
+
+            <div class="events_box">
+                    <div class="events_pics">
+                       <img src={% static "css/img/pexels-luis-quintero-2351719.jpg" %} alt="">
+
+                    </div>
+                    <div class="events_details">
+                       <div class="events_name">
+                        MID-WEEK SERVICE (BreakThroughs Hour)
+                       </div>
+                        <div class="events_info">
+                            He who opens the breach goes up before them; they break through and
+                            pass the gate, going out by it. Their king passes on before them, the Lord
+                            at their head - <span>Micah 2:13</span> <br>
+                            Just us every Wednesday by 5:00PM
+                           </div>
+
+                           <a href="{% url 'home:eventspage' %}" class="a_more">
+                            <div class="events_more">
+                                READ MORE
+                             </div>
+                           </a>
+
+                       </div>
+
+               </div>
+        </div>
+
+        {% endblock %}

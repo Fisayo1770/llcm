@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+html{
+
+
+
+    /* tab-land */
+    @media  screen and (max-width:75em) {
+        font-size:56.25%;
+    }
+
+
+    /* tab-port */
+
+    @media  screen and (max-width:56.25em) {
+        font-size:50%;
+    }
+
+    /* @media screen and (max-width:112.5em) {
+        font-size:75%;
+    } */
+
+}
+
+
+/* desktop */
+@media screen and (max-width:112.5em){
+    .school_pics_box{
+        /* border: 1px solid red; */
+        padding: 15px;
+        width: 300%;
+        margin: .5rem;
+    }
+
+    .school_pics_box img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .school_pics_box_one{
+        /* border: 1px solid red; */
+        padding: 15px;
+        margin: .5rem;
+        margin-left: 20rem;
+    }
+    
+    .school_pics_box_one img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .school_pics_main_box{
+        /* border: 1px solid red; */
+        padding: 2rem;
+        display: flex;
+    }
+    
+}
+
+
+
+
+/* tab-land */
+@media screen and (max-width:75em) {
+   .school_pics_box{
+       /* border: 1px solid blue; */
+   }
+   .school_pics_box_one{
+    
+    margin-left: 7rem;
+}
+
+}
+
+
+
+
+/* TAB LAND 2 */
+@media screen and (max-width: 66rem){
+    .school_pics_box{
+        /* border: 1px solid green; */
+    }
+}
+
+
+
+
+/* TAB-PORT */
+@media screen and (max-width: 56.25em){
+    .school_pics_box{
+        /* border: 1px solid black; */
+        width: 90%;
+
+    }
+
+    .school_pics_main_box{
+       flex-direction: column;
+    }
+    
+
+    .school_pics_box_one{
+        margin-left: 3.5rem;
+    }
+}
+
+
+
+
+/* TAB-PORT 2 */
+@media screen and (max-width: 47.875rem){
+   
+}
+
+
+
+/* PHONE-LAND */
+@media screen and (max-width: 38.5rem){
+    
+}
+
+
+
+/* PHONE LAND 2 */
+@media screen and (max-width: 32.25rem){
+    
+}
+
+
+
+
+/* phone-port */
+@media screen and (max-width: 30.563em ){
+    
+}
+
+
+
+/* phone-port-low */
+@media screen and (max-width:23.5em){
+   
+}
+
+
+.team_main{
+    /* border: 1px solid red; */
+}
+
+.team_main_title{
+    /* border: 1px solid blue; */
+    margin-top: 1rem;
+    height: 4rem;
+}
+
+.check_me{
+    /* border: 3px solid peru; */
+    padding: 1rem;
+}
+
+.gallery_box{
+    /* border: 1px solid red; */
+    padding: 1rem;
+}
+
+
+
+
+
+

@@ -1,0 +1,127 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+     <link rel="stylesheet" href="{% static "css/style.css" %}">
+     <link rel="stylesheet" href="{% static "css/events.css" %}">
+     <link rel="stylesheet" href="{% static "css/form.css" %}">
+     <link rel="stylesheet" href="{% static "css/blog_list.css" %}">
+     <link rel="stylesheet" href="{% static "css/blog_detail.css" %}">
+     <link rel="stylesheet" href="{% static "css/blog_admin_detail.css" %}">
+     <link rel="stylesheet" href="{% static "css/about.css" %}">
+     <link rel="stylesheet" href="{% static "css/team.css" %}">
+     <link rel="stylesheet" href="{% static "css/contact.css" %}">
+     <link rel="shortcut icon" href="{% static "css/img/churchlo.png" %}" type=image/x-icon>
+</head>
+<body>
+    <script src={% static "js/header.js" %}></script>
+    <header>
+      <div class="top">
+              <div class="top-logo">
+                      <img src={% static "css/img/churchlo.png" %} alt="ChurchLogo">
+                  </div>
+                  <div class="top-name">
+                          Love Leads Covenant Ministries <br> International Inc.
+                  </div>
+
+                  <div class="top-navigation">
+                      <ul>
+                          <li> <a href="{% url 'home:basepage' %}">HOME</a></li>
+                          <li> <a href="{% url 'home:eventspage' %}">EVENTS</a></li>
+                          <li> <a href="{% url 'home:teampage' %}">OUR TEAM</a></li>
+                          <li> <a href="{% url 'home:aboutuspage' %}">ABOUT US</a></li>
+                          <li> <a href="{% url 'lovcom:post_list' %}">LovCom</a></li>
+
+                  </div>
+      </div>
+    </header>
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+  <div id="sidebar">
+    
+  </div>
+  <footer>
+      <div class="main_footer">
+          <div class="sub_footer">
+              <div class="footer_logo">
+                      <img src={% static "css/img/churchlo.png" %} alt="">
+              </div>
+
+              <div class="footer_name">
+                      Love Lead Covenant Ministries International Inc.
+              </div>
+          </div>
+
+          <div class="sub_footer_two">
+              <div class="contact_title">
+                  CONTACT US
+                  <p>
+                          # 1 Goshen Ave. Adeyemo bus-stop, Oluyole Industrial <br>
+                           estate Ext. Ibadan, Oyo state, Nigeria.<br> <br>
+                          KM 130, Plot 1&2 Olusegun Banjo Street, Lagos-Ibadan Express way, <br>
+                          Academy Ibadan, Oyo State Nigeria. <br>
+                          <br>
+                          Tel:    07067726185, 09036509333
+                  </p>
+              </div>
+          </div>
+          <div class="sub_footer_three">
+              <div class="quick_title">
+                      QUICK LINKS
+              </div>
+              <ul>
+                <li> <a href="{% url 'home:basepage' %}">HOME</a></li>
+                <li> <a href="{% url 'home:eventspage' %}">EVENTS</a></li>
+                <li> <a href="{% url 'home:teampage' %}">OUR TEAM</a></li>
+                <li> <a href="{% url 'home:aboutuspage' %}">ABOUT US</a></li>
+                <li> <a href="{% url 'lovcom:post_list' %}">LovCom</a></li>
+
+              </ul>
+          </div>
+      </div>
+
+      <div class="red_footer">
+          <div class="copyright">
+              &copy; 2020  <span>Love Leads Covenant Ministries  International Inc.</span>
+          </div>
+
+          <div class="copyright" id="right">
+              &copy; 2020  <span>LLCM.</span>
+          </div>
+
+          <div class="follow">
+              <div class="follow_text">
+                  FOLLOW US ON:
+              </div>
+              <div class="follow_logo">
+                      <a href="www.facebook.com/Loveleads">
+                      <img src="{% static "css/img/icon/icons8-facebook-480.png" %}" alt="">
+
+                      </a>
+              </div>
+
+              <div class="follow_logo">
+                      <a href="www.instagram.com/loveleadscm">
+                              <img src="{% static "css/img/icon/icons8-instagram-480.png" %}" alt="">
+
+                              </a>
+             </div>
+
+              <div class="follow_logo">
+                      <a href="www.twitter.com/Loveleads4">
+                              <img src="{% static "css/img/icon/icons8-twitter-480.png" %}" alt="">
+
+                              </a>
+
+              </div>
+
+      </div>
+      </div>
+  </footer>
+</body>
+
+</html>
+</html>

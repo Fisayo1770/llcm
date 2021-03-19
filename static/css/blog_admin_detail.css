@@ -1,0 +1,308 @@
+html{
+
+    font-size: 62.5%;
+
+    /* tab-land */
+    @media  screen and (max-width:75em) {
+        font-size:56.25%;
+    }
+
+
+    /* tab-port */
+
+    @media  screen and (max-width:56.25em) {
+        font-size:50%;
+    }
+
+    /* @media screen and (max-width:112.5em) {
+        font-size:75%;
+    } */
+
+}
+
+
+/* desktop */
+@media screen and (max-width:112.5em){
+    .comment_box{
+        /* border:  2px solid grey; */
+        padding: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.548);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin: 20px;
+    }
+
+    .commenter_name{
+        /* border: 1px solid red; */
+        width: 60%;
+        margin-left: 7rem;
+        font-weight: bold;
+        margin-top: -3.5rem
+    }
+
+    .comment_date{
+        /* border: 1px solid red; */
+        width: 20%;
+        margin-left: 7rem;   
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 4px;
+        color: grey;
+        /* text-align: center */
+    }
+
+    
+    .profile_avatar{
+        /* border: 1px solid red; */
+        width: 20%;
+
+    }
+
+    .reply_box{
+        /* border:  2px solid grey; */
+        padding: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.548);
+        border-radius: 10px;
+        width: 90%;
+        margin-left: 5rem;
+        margin-top: 1rem;
+      }
+}
+
+
+
+
+/* tab-land */
+@media screen and (max-width:75em) {
+    .commenter_name{
+        /* color: red; */
+        font-size: 2rem;
+    }
+
+    .profile_avatar{
+        width: 30%;
+    }
+}
+
+
+
+
+/* TAB LAND 2 */
+@media screen and (max-width: 66rem){
+    .commenter_name{
+        /* color: blue; */
+        font-size: 2rem;
+    }
+
+    
+    .profile_avatar{
+        width: 40%;
+    }
+}
+
+
+
+
+/* TAB-PORT */
+@media screen and (max-width: 56.25em){
+    .commenter_name{
+        /* color: green; */
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* TAB-PORT 2 */
+@media screen and (max-width: 47.875rem){
+    .commenter_name{
+        /* color: yellow; */
+        font-size: 2rem;
+    }
+
+    .reply_box{
+        margin-left: 3rem;
+      }
+}
+
+
+
+/* PHONE-LAND */
+@media screen and (max-width: 38.5rem){
+    .commenter_name{
+        /* color: red; */
+        font-size: 2rem;
+    }
+
+    .profile_avatar{
+        width: 60%;
+    }
+}
+
+
+
+/* PHONE LAND 2 */
+@media screen and (max-width: 32.25rem){
+    .commenter_name{
+        /* color: purple; */
+        font-size: 2rem;
+    }
+
+    .profile_avatar{
+        width: 60%;
+    }
+
+    .reply_box{
+        margin-left: 2rem;
+    }
+}
+
+
+
+
+/* phone-port */
+@media screen and (max-width: 30.563em ){
+    .commenter_name{
+        /* color: peru; */
+        font-size: 2rem;
+    }
+
+    .profile_avatar{
+        width: 80%;
+    }
+}
+
+
+
+/* phone-port-low */
+@media screen and (max-width:23.5em){
+    .commenter_name{
+        /* color: palegreen; */
+        font-size: 2rem;
+    }
+
+    .reply_box{
+        margin-left: 1rem;
+    }
+}
+
+
+.reply_input_div{
+    /* border: 1px solid red; */
+    padding: .1rem
+}
+
+
+.comment_show{
+    /* border: 1px solid red; */
+    padding: 1rem;
+}
+
+
+
+
+
+
+.comment_text{
+    /* width: 90%; */
+    /* margin-left: 4rem; */
+    padding: 2px;
+    margin-top: 15px;
+}
+
+.long_comment_pics{
+    /* display: flex; */
+}
+
+
+.profile_avatar img{
+    width: 20%;
+    height: 20%;
+    clip-path: circle();
+}
+
+.reply{
+    /* border: 1px solid red; */
+    margin-top: 1.5rem;
+}
+
+.anch{
+  display: flex;
+  text-decoration: none;
+
+}
+
+.anch img{
+  width: 2%;
+  height: 2%
+}
+
+.anch p{
+  margin-left: .5rem;
+  margin-top: 2px;
+  font-weight: bold ;
+  text-decoration: none;
+} 
+
+/* .reply img{
+    width: 2%;
+    height: 2%;
+}
+ 
+.reply p{
+    margin-left: 1rem;
+    margin-top: 2px;
+    font-weight: bold ;
+} */
+
+
+
+
+.edit_div{
+    /* border: 1px solid red; */
+    height: 5vh;
+  margin-top: 9px;
+}
+
+.edit_button{
+  display: block;
+  /* float: right; */
+  line-height: 24pt;
+  padding: 0 20px;
+  border: none;
+  background: rgb(10, 201, 90);
+  margin-left: 9px;
+  color: white;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none;
+}
+
+.edit_button:hover {
+    background: inherit;
+    color: rgb(10, 201, 90);
+    border-bottom: 2px solid rgb(10, 201, 90);
+}
+
+.delete_button{
+    display: block;
+    /* float: right; */
+    line-height: 24pt;
+    padding: 0 20px;
+    border: none;
+    background: rgb(201, 10, 10);
+    margin-left: 9px;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.2s all ease-in-out;
+    border-bottom: 2px solid transparent;
+    outline: none;
+  }
+  
+  .delete_button:hover {
+      background: inherit;
+      color: rgb(201, 10, 10);
+      border-bottom: 2px solid rgb(201, 10, 10)
+  }

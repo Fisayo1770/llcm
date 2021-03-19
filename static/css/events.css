@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+html{
+
+    font-size:62.5%;
+
+    /* tab-land */
+    @media  screen and (max-width:75em) {
+        font-size:56.25%;
+    }
+
+
+
+
+    /* tab-port */
+
+    @media  screen and (max-width:56.25em) {
+        font-size:50%;
+    }
+
+    /* @media screen and (max-width:112.5em) {
+        font-size:75%;
+    } */
+
+}
+
+/* desktop */
+@media screen and (max-width:112.5em){
+
+    
+.events_big_title{
+    /* border:  1px solid blue; */
+    font-size: 3.5rem;
+    color: crimson;
+    font-family: Vivaldi;
+    font-weight: bolder;
+    margin-left: 2rem;
+}
+
+.events_container{
+    /* border: 1px solid red; */
+    padding: 1rem;
+}
+
+.events_details_div {
+    /* border: 1px solid grey; */
+    /* border-bottom: 1px solid grey; */
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+}
+
+
+.events_details_time{
+    /* border: 1px solid black; */
+    width: 15%;
+    padding: 5px;
+}
+
+.date_events{
+    /* border: 1px solid blue; */
+    text-align: center;
+    color: crimson;
+    font-size: 2.5rem;
+    /* font-family: CityBlueprint;  */
+    font-weight: bolder;
+    padding: 1rem;
+
+}
+
+.month_events{
+    /* border: 1px solid blue; */
+    text-align: center;
+    color: crimson;
+    font-size: 1.5rem;
+    /* font-family: CityBlueprint; */
+    font-weight: bolder; 
+}
+
+.events_details_picture{
+    /* border: 1px solid red; */
+    margin-left: 10px;
+    width: 30%;
+}
+
+
+.events_details_picture img{
+    width: 100%;
+    height: 100%;
+}
+
+.events_details_details{
+    /* border: 1px solid green; */
+    margin-left: 10px;
+    width: 50%;
+}
+
+
+.events_details_details_title{
+    margin: 5px;
+    font-size: 2rem;
+    font-family: Castellar;
+    margin-left: 2rem;
+    color: rgb(212, 14, 47);
+    font-weight: bold;
+}   
+
+
+.events_details_details_location{
+    /* border: 1px solid red; */
+    color: grey;
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    line-height: 25px;
+}  
+
+.events_details_details_realdetails{
+    /* border: 1px solid crimson; */
+    margin: 2rem;
+    font-size: 1.4rem;
+    line-height: 20px;
+    color: grey;
+    text-align: justify;
+}   
+
+}
+
+
+
+/* tab-land */
+@media screen and (max-width:75em) {
+    .events_big_title{
+        /* border:  1px solid black; */
+        
+    }
+}
+
+
+
+
+/* TAB LAND 2 */
+@media screen and (max-width: 66rem){
+    .events_big_title{
+        /* border:  1px solid brown; */
+    }
+}
+
+
+
+/* TAB-PORT */
+@media screen and (max-width: 56.25em){
+    .events_big_title{
+        /* border:  1px solid blue; */
+        
+    }
+}
+
+
+
+
+
+/* TAB-PORT 2 */
+@media screen and (max-width: 47.875rem){
+    .events_big_title{
+        /* border:  1px solid green; */
+    }
+
+    .events_details_div{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .events_details_time{
+        width: 100%;
+    }
+
+    .events_details_picture{
+        width: 100%;
+    }
+
+    .events_details_picture img{
+        width: 70%;
+        margin-left: 10rem;
+    }
+
+    .events_details_details{
+        width: 100%;
+    }
+
+    .events_details_details_location{
+        text-align: center;
+    }
+
+}
+
+
+/* PHONE-LAND */
+@media screen and (max-width: 38.5rem){
+    .events_big_title{
+        /* border:  1px solid red; */
+        
+    }
+
+    
+}
+
+
+
+/* PHONE LAND 2 */
+@media screen and (max-width: 32.25rem){
+    .events_details_picture img{
+        width: 70%;
+        margin-left: 6rem;
+    }
+}
+
+
+/* phone-port */
+@media screen and (max-width: 30.563em ) {
+    .events_details_picture img{
+        width: 70%;
+        margin-left: 5rem;
+    }
+
+    .events_details_details_location{
+        margin-left: 0rem;
+    }
+}
+
+
+/* phone-port-low */
+@media screen and (max-width:23.5em){
+    .events_details_details_location{
+        font-size: 1.2rem;
+        line-height: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html{
+    font-size: 74%;
+
+    /* tab-land */
+    @media  screen and (max-width:75em) {
+        font-size:56.25%;
+    }
+
+
+
+
+    /* tab-port */
+
+    @media  screen and (max-width:56.25em) {
+        font-size:50%;
+    }
+
+    /* @media screen and (max-width:112.5em) {
+        font-size:75%;
+    } */
+
+
+}
+
+
+/* desktop */
+@media screen and (max-width:112.5em){
+    
+.social_pas{
+    /* border: 1px solid red; */
+    width: 30%;
+    padding: 2px;
+    margin-left: 22rem;
+    display: flex;
+    margin-bottom: 10px
+}
+
+.pastor_long{
+    /* border: 1px solid blue; */
+   padding: 2px;
+    display: flex;
+    margin-top: 1rem
+}
+
+.each_social{
+    /* border: 1px solid brown; */
+    width: 30%;
+    /* margin-left: 15px; */
+    padding: 2px
+}
+
+.each_social img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.short_div_pastor{
+    /* border: 1px solid black; */
+    width:30%;
+    padding: 2px;
+    margin-left: 3rem;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+    border-radius: 1rem;
+    margin-bottom: 10px
+}
+
+.italic_text{
+    /* border: 1px solid red; */
+    width: 45%;
+    padding: 5px;
+    margin-left: 22rem;
+    background: #a09d9d27;
+    border-radius: 1rem;
+    color: #945c5c
+}
+
+.paragraph{
+    /* border: 1px solid black; */
+    width: 90%;
+    border-radius: 1rem;
+    margin-left: 3rem;
+    padding: 1rem
+}
+
+.paragraph h2{
+    color: #945c5c;
+}
+
+.vision_header_title{
+    /* border: 1px solid blue; */
+    padding: 2px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+    text-shadow: 1px 1px #000000
+
+}
+
+.vision_big_title{
+    /* border: 1px solid red; */
+    width: 40%;
+    padding: 2px;
+    text-align: center;
+    font-weight: bolder;
+    color: #945c5c;
+    font-size: 2rem;
+    text-shadow: 1px 1px #000000
+}
+
+
+.pas_name{
+    /* border: 1px solid seagreen; */
+    width: 80%;
+    padding: 2px;
+    margin-left: 3.7rem;
+    font-weight: bolder;
+    text-align: center;
+    color: #9c5454;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px #000000    
+}
+
+}
+
+
+
+/* tab-land */
+@media screen and (max-width:75em) {
+   .social_pas{
+       margin-left: 16rem;  
+   }
+
+   .each_social{
+       /* border: 1px solid red; */
+         width: 100%;
+         margin-left: 0px
+   }
+
+   .short_div_pastor{
+    margin-left: 1.5rem;
+   }
+}
+
+
+
+/* TAB LAND 2 */
+@media screen and (max-width: 66rem){
+    .social_pas{
+        margin-left: 14rem;
+    }
+
+    .short_div_pastor{
+        padding: 1px;
+        /* height: 20rem; */
+    }
+
+    .italic_text{
+        margin-left: 17rem;
+    }
+}
+
+
+
+
+/* TAB-PORT */
+@media screen and (max-width: 56.25em){
+
+    .pastor_long{
+        flex-direction: column;
+    }
+
+    .short_div_pastor{
+        margin-left: 13rem;
+        margin-bottom: 1rem;
+        width: 60%;
+    }
+
+    .social_pas{
+        margin-left: 13rem;
+    }
+
+    .italic_text{
+        margin-left: 15rem;
+    }
+   
+}
+
+
+
+
+/* TAB-PORT 2 */
+
+@media screen and (max-width: 47.875rem){
+   .short_div_pastor{
+       margin-left: 12rem;
+   }
+}
+
+
+/* PHONE-LAND */
+@media screen and (max-width: 38.5rem){
+    .short_div_pastor{
+        margin-left: 9rem;
+    }
+
+    .paragraph{
+        margin-left: 1.4rem;
+
+    }
+
+    .italic_text{
+        margin-left: 6rem;
+        width: 70%;
+    }
+}
+
+
+/* PHONE LAND 2 */
+@media screen and (max-width: 32.25rem){
+
+    .short_div_pastor{
+        margin-left: 7rem;
+    }
+
+    
+    .italic_text{
+        margin-left: 2.2rem;
+        width: 80%;
+    }
+
+    .vision_header_title{
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+
+    .vision_big_title{
+        /* border: 1px solid red; */
+        width: 100%;
+        text-align: left;
+    }
+
+   
+    .pas_name{
+        margin-left: 2rem;
+    }
+}
+
+/* phone-port */
+@media screen and (max-width: 30.563em ) {
+    .social_pas{
+        margin-left: 10rem;
+    }
+
+    .short_div_pastor{
+        margin-left: 6rem;
+    }
+
+    .pas_name{
+        font-size: 1.2rem;
+    }
+
+    .vision_big_title{
+        font-size: 1.5rem;
+    }
+
+    .paragraph{
+        margin-left: .6rem;
+    }
+
+}
+
+/* phone-port-low */
+@media screen and (max-width:23.5em){
+        .short_div_pastor{
+            margin-left: 5rem;
+        }
+
+        .social_pas{
+            margin-left: 8rem;
+        }
+
+}
+
+
+
+.main_div{
+    /* border: 1px solid red; */
+    padding: 1rem
+}
+
+
+
+
+
+.pastor_pics{
+    /* border: 1px solid red; */
+    width: 70%;
+    padding: 2px;
+    /* height: 40vh; */
+    margin-left: 3.7rem;
+}
+
+.pastor_pics img{
+    width: 100%;
+    height: 100%;
+    clip-path: circle();
+    
+}       
+
+
+.pas_title{
+    /* border: 1px solid red; */
+    padding: 2px;
+    margin-top: 10px;    
+    margin-bottom: 10px;    
+    text-align: center;
+    font-weight: bold
+}
+
+
+
+
+.vision{
+    /* border: 1px solid red; */
+    padding: 5px;
+    text-align: justify;
+    line-height: 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+
+}
+
+
+
+
+
+
