@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+     <link rel="stylesheet" href="{% static "css/styles.css" %}">
+     <link rel="stylesheet" href="{% static "css/events.css" %}">
+     <link rel="stylesheet" href="{% static "css/form.css" %}">
+     <link rel="stylesheet" href="{% static "css/blog_list.css" %}">
+     <link rel="stylesheet" href="{% static "css/blog_detail.css" %}">
+     <link rel="stylesheet" href="{% static "css/blog_admin_detail.css" %}">
+     <link rel="stylesheet" href="{% static "css/about.css" %}">
+     <link rel="stylesheet" href="{% static "css/team.css" %}">
+     <link rel="stylesheet" href="{% static "css/contact.css" %}">
+     <link rel="shortcut icon" href="{% static "css/img/churchlo.png"}" type=image/x-icon>
+</head>
+<body>
+    <script src={% static "js/header.js" %}></script>
+    <header>
+      <div class="top">
+              <div class="top-logo">
+                      <img src={% static "css/img/churchlo.png"} alt="ChurchLogo">x
+                  </div>
+                  <div class="top-name">
+                          Love Leads Covenant Ministries <br> International Inc.
+                  </div>
+
+                  <div class="top-navigation">
+
+                  </div>
+      </div>
+    </header>
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+  <div id="sidebar">
+    <h2>Love Community</h2>
+      <p>This is a community of love.</p>
+  </div>
+</body>
+</html>

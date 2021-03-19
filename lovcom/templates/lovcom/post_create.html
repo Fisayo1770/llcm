@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Ask a question{% endblock %}
+{% block content %}
+  <div class="events_title">
+    <h1>Ask a question or Make a suggestion</h1>
+    <h5>
+      Please ask your question or suggestion We will be happy to respond.
+    </h5>
+    {% if preview %}
+      <div class="">
+        Question Preview
+        <div class="">
+          <h1>{{ preview.title }}</h1>
+          {{ preview.body }}
+        </div>
+
+      </div>
+    {% endif %}
+    <div class="form_question">
+        <div class="contact-us">
+          <form class="" action="" method="post">  {% csrf_token %}
+            {{ form }}
+            <button type="submit" name="action" value='PREVIEW'>Preview</button>
+            <button type="submit" name="action" value='SAVE' >Ask! </button>
+          </form>
+        </div>
+        </div>
+
+  </div>
+{% endblock %}

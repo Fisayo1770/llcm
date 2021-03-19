@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}LoveCom{% endblock %}
+{% block content %}
+  <div class="main_blog_div">
+    <div class="reply_box" >
+    <h2>Love Community</h2>
+      <p>This is a community of love. You can post your questions and suggestions
+       and you'd get a response as soon as possible.</p>
+    <div class="form_link">
+
+      <a href="{% url 'lovcom:post_create' %}">Click Here To Post A Question</a>
+    </div>
+
+    </div>
+
+    {% for post in posts %}
+    <div class="comment_box">
+           <div class="long_comment_pics">
+               <div class="profile_avatar">
+                 <img src="{% static 'css/img/icon/user.png' %}"  alt="">
+               </div>
+
+           </div>
+           <div class="commenter_name">
+               <a href="{{ post.get_absolute_url }}"> {{ post.author }} </a>
+           </div>
+           <div class="comment_date">
+                {{ post.publish }}
+           </div>
+
+           <div class="blog_list_name">
+               <a href="{{ post.get_absolute_url }}"> {{ post.title }} </a>
+           </div>
+
+           <div class="reply">
+             {{ post.body|truncatewords:40|linebreaks }}
+               <a href="{{ post.get_absolute_url }}"> Read more... </a>
+           </div>
+       </div>
+  </div>
+  {% empty %}
+    <p>No questions yet'</p>
+
+
+  {% endfor %}
+
+  {% include "pagination.html" with page=page_obj %}
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ post.title }}{% endblock %}
+{% block content %}
+<div class="container_question">
+
+              <div class="comment_show">
+                  <div class="comment_box">
+                      <div class="long_comment_pics">
+                          <div class="profile_avatar">
+                                 <img src="{% static "css/img/icon/user.png" %}">
+                          </div>
+                          <div class="commenter_name">
+                              {{ post.author }}
+                          </div>
+                      </div>
+                      <div class="comment_date">
+                           {{ post.publish }}
+                      </div>
+                      <div class="comment_text">
+                              <h1>{{ post.title }}</h1>
+                              {{ post.body|linebreaks }}
+                      </div>
+                  </div>
+
+              </div>
+
+  <div class="">
+                  <div class="reply_box">
+                    {% with comments.count as total.comments %}
+                      <h2>{{ total_comments }} comment{{ total_comments|pluralize }}</h2>
+                    {% endwith %}
+                    {% for comment in comments %}
+                      <div class="long_comment_pics">
+                          <div class="profile_avatar">
+                                 <img src="{% static "css/img/icon/user.png" %}">
+                          </div>
+                          <div class="commenter_name">
+                              {{ comment.name }}
+                          </div>
+                      </div>
+                      <div class="comment_date">
+                          {{ comment.created }} - Replied post
+                      </div>
+                      <div class="comment_text">
+                        {{ comment.body|linebreaks }}
+                        Comment {{ forloop.counter }}
+                      </div>
+                    {% empty %}
+                      <p>There are no comments yet.</p>
+                    {% endfor %}
+                </div>
+    </div>
+
+  {% if new_comment %}
+    <h2>Your comment has been added.</h2>
+  {% else %}
+  <p> </p>
+  <p> .</p>
+  <div class="events_title">
+    <p><h2>Respond to question</h2></p>
+  </div>
+
+    <div class="form_question">
+      <div class="contact-us">
+        <form action="." method="post">
+          {{ comment_form.as_p }}
+          {% csrf_token %}
+          <button id="customerOrder">SUBMIT</button>
+          <!-- <p><input id="customerOrder" type="submit" value="Add comment"></p> -->
+        </form>
+  {% endif %}
+  </div>
+  </div>
+{% endblock %}
